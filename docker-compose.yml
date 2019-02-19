@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+
+  traefik:
+    image: traefik
+    restart: unless-stopped
+    command: -c /dev/null --web --docker --logLevel=DEBUG --api 
+    networks:
+      #- themodernquiltguild
+      #- communitythemodernquiltguild
+      #- cmqgsolr
+      #- danuser
+      - cbmx
+      - larue
+      #- larue_py
+      #- empire
+      #- gv
+    ports:
+      - '7711:80'
+      - '80:80'
+      - '8080:8080'
+      #- '8983:8983'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  cbmx:
+    external:
+      name: collateralbmx_default
+  themodernquiltguild:
+    external:
+      name: themodernquiltguild_default
+  cmqgsolr:
+    external:
+      name: cmqgsolr_default
+  communitythemodernquiltguild:
+    external:
+      name: communitythemodernquiltguild_default
+  danuser:
+      external:
+        name: danuser_default
+  larue:
+      external:
+        name: larue_default
+  larue_py:
+      external:
+        name: laruepy_default
+  empire:
+      external:
+        name: empire_default
+  gv:
+      external:
+        name: gv_default

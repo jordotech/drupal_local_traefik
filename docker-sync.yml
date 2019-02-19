@@ -1,0 +1,11 @@
+version: "2"
+
+syncs:
+  docker-sync-cmqg:
+    src: './community.themodernquiltguild'
+    sync_userid: '1000'
+    sync_excludes: ['.gitignore', '.git/', '.idea/', 'sites/default/', 'mc_switch_local.sh', 'mariadb-init/', '/tmp/']
+  #docker-sync-mqg:
+    #src: './themodernquiltguild'
+    #sync_userid: '1000'
+    #sync_excludes: ['.gitignore', '.git/', '.idea/', 'sites/default/', 'mariadb-init/', '/tmp/']

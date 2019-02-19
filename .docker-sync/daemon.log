@@ -1,0 +1,17 @@
+          ok  Starting native_osx for sync docker-sync-cmqg
+          ok  docker-sync-cmqg container still running, restarting unison in container
+unix:///tmp/supervisor.sock no such file
+     success  Sync container started
+     success  Showing unison logs from your sync container: docker-sync-cmqg
+          ok  Starting native_osx for sync docker-sync-cmqg
+          ok  docker-sync-cmqg container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: docker-sync-cmqg
+          ok  Starting native_osx for sync docker-sync-cmqg
+          ok  docker-sync-cmqg container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: docker-sync-cmqg
